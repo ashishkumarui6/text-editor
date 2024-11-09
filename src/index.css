@@ -9,11 +9,127 @@
 }
 
 body{
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 
 :disabled{
   opacity: 0.5;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+
+  .container{
+    width: 70%;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+  .container{
+    width: 70%;
+  }
+
+  .textTab{
+    width: 100%;
+  }
+
+  .Buttons{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 769px){
+
+  .container{
+    width: 70%;
+  }
+
+  .textTab{
+    width: 100%;
+  }
+
+  .textArea h1{
+    font-size: 19px;
+  }
+
+  .textSummary h1{
+    font-size: 19px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+p{
+  font-size: 14px;
+}
+
+span{
+  font-size: 14px;
+}
+
+  .Buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+
+  .container{
+    width: 70%;
+  }
+
+
+  .textArea h1{
+    font-size: 19px;
+  }
+
+  .textSummary h1{
+    font-size: 19px;
+}
+
+h2{
+  font-size: 15px;
+}
+
+p{
+  font-size: 12px;
+}
+
+span{
+  font-size: 12px;
+}
+
+  .Buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  
 }

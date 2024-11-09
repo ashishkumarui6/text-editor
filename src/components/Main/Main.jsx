@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./Main.css";
+import Container from "../../Container";
 
 const Main = () => {
   const [text, setText] = useState("");
@@ -36,7 +37,7 @@ const Main = () => {
   };
 
   return (
-    <>
+    <Container>
       <div className="container">
         <div className="textAreacontainer">
           <div className="textArea">
@@ -110,12 +111,12 @@ const Main = () => {
             </p>
             <div className="preview light">
               <h2>Preview</h2>
-              <p>{text.length > 0 ? text : "Nothing To Preview!"}</p>
+              <span>{text.length > 0 ? text : "Nothing To Preview!"}</span>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 
